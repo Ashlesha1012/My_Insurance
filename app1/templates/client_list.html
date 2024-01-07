@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Client List</title>
+</head>
+<body>
+    <h1>Client List</h1>
+    <ul>
+        {% for client in clients %}
+            <li>{{ client.name }}</li>
+            <!-- Display other policy details -->
+        {% endfor %}
+    </ul>
+</body>
+</html>

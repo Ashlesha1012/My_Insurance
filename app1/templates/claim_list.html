@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Policy List</title>
+</head>
+<body>
+    <h1>Policy List</h1>
+    <ul>
+        {% for claim in claims %}
+            <li>{{ policy.policy_holder.name }} - {{ policy.coverage_details }}</li>
+            <!-- Display other policy details -->
+        {% endfor %}
+    </ul>
+</body>
+</html>
