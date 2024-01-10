@@ -21,12 +21,13 @@ from django.urls import path
 from app1 import views
 
 urlpatterns = [
+    path('', views.home, name='home'),
     path('create_policy/', views.create_policy, name='create_policy'),
-    path('list_policy/', views.policy_list, name='create_policy'),
-    path('create_claim/', views.create_claim, name='create_policy'),
-    path('list_claim/', views.claims_list, name='create_policy'),
-    path('create_client/', views.create_client, name='create_policy'),
-    path('list_client/', views.client_list, name='create_policy'),
+    path('policy_list/', views.policy_list, name='policy_list'),
+    path('create_claim/', views.create_claim, name='create_claim'),
+    path('claim_list/', views.claims_list, name='claim_list'),
+    path('create_client/', views.create_client, name='create_client'),
+    path('client_list/', views.client_list, name='client_list'),
     
     
 ]

@@ -3,6 +3,9 @@ from .models import Policy, Client, Claim
 from .forms import PolicyForm, ClientForm, ClaimForm
 
 # Create your views here.
+def home(request):
+    return render(request, 'home.html')
+
 
 def policy_list(request):
     policies = Policy.objects.all()

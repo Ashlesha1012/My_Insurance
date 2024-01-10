@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Home Page!</h1>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="{% url 'create_policy' %}">Create Policy</a></li>
+            <li class="list-group-item"><a href="{% url 'policy_list' %}">Policy List</a></li>
+            <li class="list-group-item"><a href="{% url 'create_claim' %}">Create Claim</a></li>
+            <li class="list-group-item"><a href="{% url 'claim_list' %}">Claim List</a></li>
+            <li class="list-group-item"><a href="{% url 'create_client' %}">Create Client</a></li>
+            <li class="list-group-item"><a href="{% url 'client_list' %}">Client List</a></li>
+            <!-- Add other URLs as needed -->
+        </ul>
+    </div>
+
+    <!-- Add Bootstrap JavaScript and jQuery (if needed) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .square-block {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .square-block a {
+            color: #333;
+            text-decoration: none;
+        }
+        .square-block img {
+            max-width: 50px; /* Adjust the size of the logo */
+            max-height: 50px; /* Adjust the size of the logo */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Home Page!</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="square-block">
+                    <img src="path_to_your_logo.png" alt="Logo">
+                    <a href="{% url 'create_policy' %}">Create Policy</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="square-block">
+                    <img src="path_to_your_logo.png" alt="Logo">
+                    <a href="{% url 'policy_list' %}">Policy List</a>
+                </div>
+            </div>
+            <!-- Repeat the above structure for other links -->
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JavaScript and jQuery (if needed) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
